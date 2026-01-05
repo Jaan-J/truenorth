@@ -15,10 +15,10 @@ const Index = () => {
         <Hero />
         <WhoThisIsFor />
         <WhatWeHelpWith />
-        <ServicesOverview />
-        <WhyTrueNorth />
+        {/* <ServicesOverview /> */}
+        {/* <WhyTrueNorth /> */}
         {/* Testimonials section placeholder for later */}
-        <FinalCTA />
+        {/* <FinalCTA /> */}
       </main>
       <Footer />
     </div>
