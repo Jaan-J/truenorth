@@ -32,7 +32,7 @@ const About = () => {
           <div className="absolute inset-0 opacity-10">
             <div className="absolute top-1/4 right-1/4 w-96 h-96 rounded-full bg-accent blur-3xl" />
           </div>
-          
+
           <div className="container-narrow relative z-10">
             <p className="text-sm font-medium text-accent uppercase tracking-wider mb-4 opacity-0 animate-fade-up">
               About TrueNorth
@@ -57,19 +57,21 @@ const About = () => {
                 <h2 className="mb-6">From economics to empowerment</h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    With a background in economics and over a decade of experience in client advisory, 
+                    I hold a degree in Economics and have spent years working in client advisory roles, helping
+                    individuals understand their financial options, make informed decisions, and move forward with
+                    confidence.
+                  </p>
+                  <p>
+                    With a background in economics and over a decade of experience in client advisory,
                     I've seen firsthand how the financial industry often fails everyday people.
                   </p>
                   <p>
-                    Complex jargon, product-pushing sales tactics, and a lack of genuine education 
-                    leave most people feeling confused and powerless about their own money.
-                  </p>
-                  <p className="text-foreground font-medium">
-                    I started TrueNorth to change that.
+                    My approach is grounded in real experience, not theory. I focus on clarity, structure, and honest
+                    conversations about money.
                   </p>
                 </div>
               </div>
-              
+
               <div className="opacity-0 animate-fade-up delay-200">
                 <p className="text-sm font-medium text-secondary uppercase tracking-wider mb-4">
                   Why Coaching
@@ -77,18 +79,17 @@ const About = () => {
                 <h2 className="mb-6">Bridging the education gap</h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    Most people never learn how to manage money. Schools don't teach it. 
-                    Parents often struggle with it themselves. And by the time we're adults, 
-                    we're expected to just "figure it out."
+                    Most people don't need more financial products—they need understanding
                   </p>
                   <p>
-                    Financial coaching isn't about investment tips or get-rich-quick schemes. 
-                    It's about building <span className="text-foreground font-medium">clarity</span>, 
-                    <span className="text-foreground font-medium"> confidence</span>, and 
-                    <span className="text-foreground font-medium"> dignity</span> around your finances.
+                    I started TrueNorth Financial Coaching to close the education gap that leaves many people
+                    feeling overwhelmed, embarrassed, or stuck. Financial stress can affect confidence,
+                    relationships, and overall well-being. Coaching provides a safe, supportive space to gain clarity,
+                    rebuild confidence, and take control—step by step.
                   </p>
                   <p>
-                    Everyone deserves to understand their money—not just the wealthy.
+                    This is about dignity, not judgment. Everyone deserves to understand how the system works
+                    and how to use it to their advantage.
                   </p>
                 </div>
               </div>
@@ -105,7 +106,7 @@ const About = () => {
               </p>
               <h2>How we work</h2>
             </div>
-            
+
             <div className="grid md:grid-cols-3 gap-8">
               {values.map((value, index) => (
                 <div
@@ -133,7 +134,7 @@ const About = () => {
           <div className="container-narrow">
             <blockquote className="text-center max-w-3xl mx-auto opacity-0 animate-fade-up">
               <p className="font-editorial text-2xl md:text-3xl italic text-primary mb-6">
-                "My goal isn't to tell you what to do with your money. 
+                "My goal isn't to tell you what to do with your money.
                 It's to help you understand it well enough to decide for yourself."
               </p>
               <div className="divider-compass max-w-32 mx-auto" />

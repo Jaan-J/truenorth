@@ -71,11 +71,11 @@ export function Hero() {
               {/* Card Header */}
               <div className="flex items-center justify-between mb-8">
                 <div>
-                  <p className="text-primary-foreground/50 text-sm uppercase tracking-wider">Portfolio Value</p>
-                  <p className="text-3xl font-semibold text-primary-foreground mt-1">$847,234.56</p>
+                  <p className="text-primary-foreground/50 text-sm uppercase tracking-wider">Portfolio Overview</p>
+                  <p className="text-3xl font-semibold text-primary-foreground mt-1">Potential Growth</p>
                 </div>
                 <div className="px-3 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-400/30">
-                  <span className="text-emerald-400 text-sm font-medium">+12.4%</span>
+                  <span className="text-emerald-400 text-sm font-medium">+20.4%</span>
                 </div>
               </div>
 
@@ -83,14 +83,24 @@ export function Hero() {
               <div className="relative h-48 mb-6">
                 <svg viewBox="0 0 400 150" className="w-full h-full">
                   <defs>
-                    <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <linearGradient id="savingsGradient" x1="0%" y1="0%" x2="0%" y2="100%">
                       <stop offset="0%" stopColor="hsl(165, 63%, 33%)" stopOpacity="0.3" />
                       <stop offset="100%" stopColor="hsl(165, 63%, 33%)" stopOpacity="0" />
                     </linearGradient>
+                    <linearGradient id="creditGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stopColor="hsl(10, 80%, 55%)" stopOpacity="0.3" />
+                      <stop offset="100%" stopColor="hsla(60, 20%, 1%, 1.00)" stopOpacity="0" />
+                    </linearGradient>
+                    <linearGradient id="cashGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stopColor="hsl(45, 70%, 50%)" stopOpacity="0.3" />
+                      <stop offset="100%" stopColor="hsl(45, 70%, 50%)" stopOpacity="0" />
+                    </linearGradient>
                   </defs>
+
+                  {/* Savings */}
                   <path
                     d="M0,120 C50,100 100,110 150,80 C200,50 250,70 300,40 C350,30 380,35 400,25 L400,150 L0,150 Z"
-                    fill="url(#chartGradient)"
+                    fill="url(#savingsGradient)"
                   />
                   <path
                     d="M0,120 C50,100 100,110 150,80 C200,50 250,70 300,40 C350,30 380,35 400,25"
@@ -99,18 +109,41 @@ export function Hero() {
                     strokeWidth="3"
                     strokeLinecap="round"
                   />
-                  {/* Data Points */}
-                  <circle cx="150" cy="80" r="4" fill="hsl(165, 63%, 43%)" />
-                  <circle cx="300" cy="40" r="4" fill="hsl(165, 63%, 43%)" />
-                  <circle cx="400" cy="25" r="6" fill="hsl(42, 53%, 55%)" stroke="hsl(0, 0%, 100%)" strokeWidth="2" />
+
+                  {/* Credit */}
+                  <path
+                    d="M0,125 C50,115 100,100 150,95 C200,80 250,75 300,70 C350,65 380,60 400,55"
+                    fill="url(#creditGradient)"
+                  />
+                  <path
+                    d="M0,125 C50,115 100,100 150,95 C200,80 250,75 300,70 C350,65 380,60 400,55"
+                    fill="none"
+                    stroke="hsl(10, 80%, 55%)"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                  />
+
+                  {/* Cash */}
+                  <path
+                    d="M0,135 C50,125 100,115 150,105 C200,95 250,90 300,85 C350,80 380,75 400,70"
+                    fill="url(#cashGradient)"
+                  />
+                  <path
+                    d="M0,135 C50,125 100,115 150,105 C200,95 250,90 300,85 C350,80 380,75 400,70"
+                    fill="none"
+                    stroke="hsl(45, 70%, 50%)"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                  />
+
                 </svg>
               </div>
 
               {/* Quick Stats */}
               <div className="grid grid-cols-3 gap-4">
                 {[
-                  { label: "Stocks", value: "58%", color: "bg-emerald-500" },
-                  { label: "Bonds", value: "28%", color: "bg-navy-400" },
+                  { label: "Savings", value: "38%", color: "bg-emerald-500" },
+                  { label: "Credit", value: "20%", color: "bg-red-500" },
                   { label: "Cash", value: "14%", color: "bg-gold-400" },
                 ].map((item) => (
                   <div key={item.label} className="text-center">
