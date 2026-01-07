@@ -16,7 +16,7 @@ const Index = () => {
         <WhoThisIsFor />
         <WhatWeHelpWith />
         <ServicesOverview />
-        {/* <WhyTrueNorth /> */}
+        <WhyTrueNorth />
         {/* Testimonials section placeholder for later */}
         {/* <FinalCTA /> */}
       </main>
