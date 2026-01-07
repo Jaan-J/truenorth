@@ -18,7 +18,7 @@ const Index = () => {
         <ServicesOverview />
         <WhyTrueNorth />
         {/* Testimonials section placeholder for later */}
-        {/* <FinalCTA /> */}
+        <FinalCTA />
       </main>
       <Footer />
     </div>
