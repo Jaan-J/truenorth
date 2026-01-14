@@ -127,10 +127,10 @@ const BookCall = () => {
                         Calendly Integration
                       </h4>
                       <p className="text-muted-foreground text-sm max-w-sm mx-auto mb-6">
-                        Connect your Calendly account to enable booking directly on this page.
+                        {/* Connect your Calendly account to enable booking directly on this page. */}
                       </p>
                       <p className="text-xs text-muted-foreground">
-                        Embed code: Add your Calendly widget URL in the project settings
+                        {/* Embed code: Add your Calendly widget URL in the project settings */}
                       </p>
                     </div>
                   </div>
